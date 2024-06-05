@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Temas App</string>
+    <string-array name="themes_array">
+        <item>Tema Claro</item>
+        <item>Tema Oscuro</item>
+        <item>Tema Moderno</item>
+        <item>Tema Natural</item>
+        <item>Tema Vibrante</item>
+    </string-array>
+</resources>
