@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
         username = findViewById(R.id.username);
         password = findViewById(R.id.password);
         clearButton = findViewById(R.id.clearButton);
-        themeDescription = findViewById(R.id.themeDescription);
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.themes_array, android.R.layout.simple_spinner_item);
@@ -99,27 +98,22 @@ public class MainActivity extends AppCompatActivity {
             username.setTextAppearance(this, R.style.TextThemeLight);
             password.setTextAppearance(this, R.style.TextThemeLight);
             clearButton.setTextAppearance(this, R.style.ButtonThemeLight);
-            themeDescription.setText("Tema Claro: Fuente sans-serif, Botón con fondo colorPrimario");
         } else if (selectedTheme == R.style.DarkTheme) {
             username.setTextAppearance(this, R.style.TextThemeDark);
             password.setTextAppearance(this, R.style.TextThemeDark);
             clearButton.setTextAppearance(this, R.style.ButtonThemeDark);
-            themeDescription.setText("Tema Oscuro: Fuente serif, Botón con fondo colorPrimarioOscuro");
         } else if (selectedTheme == R.style.ModernTheme) {
             username.setTextAppearance(this, R.style.TextThemeModern);
             password.setTextAppearance(this, R.style.TextThemeModern);
             clearButton.setTextAppearance(this, R.style.ButtonThemeModern);
-            themeDescription.setText("Tema Moderno: Fuente monospace, Botón con fondo theme1Primario");
         } else if (selectedTheme == R.style.VibrantTheme) {
             username.setTextAppearance(this, R.style.TextThemeVibrant);
             password.setTextAppearance(this, R.style.TextThemeVibrant);
             clearButton.setTextAppearance(this, R.style.ButtonThemeVibrant);
-            themeDescription.setText("Tema Natural: Fuente cursive, Botón con fondo theme2Primario");
         } else if (selectedTheme == R.style.NaturalTheme) {
             username.setTextAppearance(this, R.style.TextThemeNatural);
             password.setTextAppearance(this, R.style.TextThemeNatural);
             clearButton.setTextAppearance(this, R.style.ButtonThemeNatural);
-            themeDescription.setText("Tema Vibrante: Fuente casual, Botón con fondo theme3Primario");
         }
     }
     private int getThemePosition(int theme) {

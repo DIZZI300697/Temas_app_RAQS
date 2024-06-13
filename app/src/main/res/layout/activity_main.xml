@@ -55,11 +55,4 @@
         android:text="Limpiar"
         android:layout_marginBottom="16dp"/>
 
-    <TextView
-        android:id="@+id/themeDescription"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:textSize="18sp"
-        android:layout_marginTop="16dp"/>
 </LinearLayout>
